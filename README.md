@@ -16,7 +16,7 @@ I believe this project is complex enough as it requires lots of image manipulati
 
 |Week | Goal |
 |---|---|
-|February 7 - 13 | **Data preparation**: Collect MRI images to create a dataset. Write functions to import this data into the program and divide it into training and testing set. |
+|February 7 - 13 | **Data preparation**: Collect MRI images to create a dataset. Write functions to import this data into the program. |
 |February 14 - 20| **Preprocessing:** - Remove image noise  - Normalize the images to remove contrast differences - Skull stripping (may not be necessary, depends on the images). Remove non useful data (skull, skin, etc.) from the image. |
 | February 20 - 27 | **Preprocessing, bias correction:** Magnetic fields create intensity variations in the images and this must be corrected. The paper proposes four different methods: filtering, surface fitting, segmentation, histogram. Explore them and determine which one is the best for this project. |
 | February 28 - March 6 | **Image registration:** This step is needed to align the different images so that the brain structures are at the same location in each image. The paper proposes different techniques to do this, but I will be focusing on edge detection. |
@@ -27,5 +27,15 @@ I believe this project is complex enough as it requires lots of image manipulati
 | April 4 - 10| Add in code that presents the data nicely and any other final touches. Prepare for submission & presentation. |
 | April 11 - 14|Submit in time for April 14th deadline.|
 
+### Data
+The data that is used in this project was obtained from various sources. Images 1 - 11 are from The National Library of Medicine's _MedPix_ database (2). Images 12 - 21 are from the _Science Photo Library_ database (3). All of the images are axial sections (view from the top the head).
+
+### Files
+**captions.txt** - Information about the type of tumor in the images. Each line corresponds to an image.  
+**tumor_detector.py** - Tumor detector program. Run with ```python tumor_detector.py```
+**/data/** - Folder containing the images used in the program.
+
 ### References
-(1) Vadmal, V., Junno, G., Badve, C., Huang, W., Waite, K. A., Barnholtz-Sloan, J. S. (2020, April). MRI image analysis methods and applications: an algorithmic perspective using brain tumors as an exemplar. _Neuro-Oncology Advances_, 2(1). https://doi.org/10.1093/noajnl/vdaa049
+(1) Vadmal, V., Junno, G., Badve, C., Huang, W., Waite, K. A., Barnholtz-Sloan, J. S. (2020, April). MRI image analysis methods and applications: an algorithmic perspective using brain tumors as an exemplar. _Neuro-Oncology Advances_, 2(1). https://doi.org/10.1093/noajnl/vdaa049  
+(2) https://medpix.nlm.nih.gov/home
+(3) https://www.sciencephoto.com/
