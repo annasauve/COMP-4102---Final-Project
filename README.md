@@ -9,8 +9,8 @@ Ensure the following Python libraries are installed:
 - OpenCV
 
 #### How to run locally
-cd into the project directory
-run `tumor_detector.py` with python
+cd into the project directory  
+run `tumor_detector.py` with python  
 press any key (on the image) to skip to the next one
 
 ### Summary
@@ -42,7 +42,7 @@ I believe this project is complex enough as it requires lots of image manipulati
 The data that is used in this project was obtained from various sources. Images named 1 - 7 are from The National Library of Medicine's _MedPix_ database (2). Images named 8 - 16 are from the _Science Photo Library_ database (3). All of the images are axial sections (view from the top the head).
 
 ### Files
-**tumor_detector.py** - Tumor detector program
+**tumor_detector.py** - Tumor detector program  
 **/data/** - Folder containing the images used in the program.
 
 ### References
