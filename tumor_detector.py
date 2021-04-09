@@ -288,6 +288,6 @@ for img in path:
         square = cv.putText(square, "Nothing was detected.", (50,50), cv.FONT_HERSHEY_SIMPLEX, 1, (255,255,255))
         print("Nothing was detected")
 
-    cv.imshow("text", square)
+    cv.imshow("location", square)
 
     cv.waitKey()
